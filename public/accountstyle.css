@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin: 2rem auto;
+}
+
+p, label {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 480px) {
+    p, label {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="date"] {
+        font-size: 0.9rem;
+    }
+}

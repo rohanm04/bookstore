@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="accountstyle.css">
+    <title>Account | Online Book Store</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/account">Account</a></li>
+            <li><button onclick="logout()" id="logout-btn">Logout</button></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Account Details</h1>
+        <div id="account-info">
+            <p><strong>Customer ID:</strong> <span id="customerId"></span></p>
+            <p><strong>Name:</strong> <span id="customerName"></span></p>
+            <p><strong>Email:</strong> <input type="email" id="email"></p>
+            <p><strong>Contact:</strong> <input type="text" id="contact"></p>
+            <p><strong>Birth Date:</strong> <input type="date" id="birthDate"></p>
+            <button onclick="updateAccount()" class="btn">Update Information</button>
+            <button onclick="deleteAccount()" class="btn">Delete Account</button>
+        </div>
+    </main>
+    <script src="account.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

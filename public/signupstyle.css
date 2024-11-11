@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333 url(landingbg.jpg) center center/cover no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    color: #F8F3E4;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #F8F3E4;
+    margin-bottom: 1rem;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.name-field {
+    flex: 1;
+}
+
+.name-field input {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #F8F3E4;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #F8F3E4;
+}
+
+input:focus {
+    outline: none;
+    border-color: #F8F3E4;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #F8F3E4;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #F8F3E4;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        width: 85%;
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .name-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

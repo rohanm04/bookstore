@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="cartstyle.css">
+    <title>Cart | Online Book Store</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/account">Account</a></li>
+            <li><button onclick="logout()" id="logout-btn">Logout</button></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Your Cart</h1>
+        <div id="cart-container"></div>
+        <div id="cart-total">
+            <p><strong>Total Amount:</strong> &#8377;<span id="total-amount">0</span></p>
+        </div>
+    </main>
+    <script src="cart.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>
