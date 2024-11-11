@@ -10,12 +10,12 @@ Database Systems university course project - Online Book Store with user account
 ## SQL Queries to Recreate Tables
 1. Author:
 
-CREATE TABLE Author (<br>
-<pre>    AuthorID NUMBER(3) PRIMARY KEY,<br>
-    AuthFirstName VARCHAR2(20) NOT NULL,<br>
-    AuthMidName VARCHAR2(20),<br>
-    AuthLastName VARCHAR2(20)<br></pre>
-);
+<pre>CREATE TABLE Author (
+    AuthorID NUMBER(3) PRIMARY KEY,
+    AuthFirstName VARCHAR2(20) NOT NULL,
+    AuthMidName VARCHAR2(20),
+    AuthLastName VARCHAR2(20)
+);</pre>
 
 INSERT INTO Author VALUES (101, 'Stephen', '', 'King');<br>
 INSERT INTO Author VALUES (102, 'Joanne', 'Kathleen', 'Rowling');<br>
