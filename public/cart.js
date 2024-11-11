@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <p><strong>Price:</strong> &#8377;${book.price}</p>
                 <p><strong>In Stock:</strong> ${book.stock_quantity}</p>
                 <label for="quantity-${book.book_id}">Quantity:</label>
-                <input type="number" id="quantity-${book.book_id}" min="1" max="${book.stock_quantity}" value="${book.quantity}">
+                <input type="number" id="quantity-${book.book_id}" min="1" max="${book.stock_quantity + book.quantity}" value="${book.quantity}">
                 <button onclick="updateQuantity(${book.book_id})">Update Quantity</button>
                 <button onclick="removeFromCart(${book.book_id})">Remove</button>
             `;
