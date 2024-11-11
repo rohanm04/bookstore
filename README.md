@@ -11,10 +11,10 @@ Database Systems university course project - Online Book Store with user account
 1. Author:
 
 CREATE TABLE Author (<br>
-    AuthorID NUMBER(3) PRIMARY KEY,<br>
+<pre>    AuthorID NUMBER(3) PRIMARY KEY,<br>
     AuthFirstName VARCHAR2(20) NOT NULL,<br>
     AuthMidName VARCHAR2(20),<br>
-    AuthLastName VARCHAR2(20)<br>
+    AuthLastName VARCHAR2(20)<br></pre>
 );
 
 INSERT INTO Author VALUES (101, 'Stephen', '', 'King');<br>
