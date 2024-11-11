@@ -2,10 +2,12 @@
 Database Systems university course project - Online Book Store with user accounts, multiple books and options to add books to cart, remove them from cart and change quantity. Uses HTML/CSS and JavaScript for frontend, Node.js and Express.js for backend, Oracle Database for the database.
 
 ## Initial Steps to Run
-1. Run <pre>npm install</pre> in the terminal within the project directory to install the necessary dependencies.
+1. Run
+<pre>npm install</pre>
+in the terminal within the project directory to install the necessary dependencies.
 2. The project was created using a local instance of Oracle Database. Hence, the tables need to be recreated with dummy values. The exact SQL queries to do so are given below.
-3. Update <pre>index.js</pre> with your SQL username, password and relevant connection string (Lines 10, 11, 12).
-4. As an alternative to Step 3, you may create the database user <pre>C##general</pre> with password <pre>general</pre> to avoid editing <pre>index.js</pre>. The SQL queries for this are also given below. However, make sure that the connection string (Line 12) corresponds to the service used.
+3. Update <strong>index.js</strong> with your SQL username, password and relevant connection string (Lines 10, 11, 12).
+4. As an alternative to Step 3, you may create the database user <strong>C##general</strong> with password <strong>general</strong> to avoid editing <strong>index.js</strong>. The SQL queries for this are also given below. However, make sure that the connection string (Line 12) corresponds to the service used.
 
 ## SQL Queries to Recreate Tables
 1. Author:
